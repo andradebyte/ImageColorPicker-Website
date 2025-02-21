@@ -5,37 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- OWN STYLE -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
 </head>
 
 <body>
     <header class="headerContainer">
-        <h1>Image Picker</h1>
-        <p>find a color from an image!</p>
+        <h1 class="Poppins">Image Picker</h1>
+        <p class="Poppins">find a color from an image!</p>
     </header>
     <main class="mainContainer">
-        <div class="imageContainer">
-            <img src="" alt="" id="imageItem">
+        <!-- BOTAO LATERAL DE NAVEGACAO -->
+        <div class="navContainer">
+            <li class="navClick">
+                <img src="/src/assets/dark-mode.png" alt="" style="width: 35px; height: 35px;">
+            </li>
+            <li class="navClick">
+                <a href="">
+                    <img src="/src/assets/github.png" alt="" class="icon">
+                </a>
+            </li>
         </div>
+        <!-- IMAGEM -->
+
+        <div class="imageContainer">
+            <img src="https://www.adema.se.gov.br/wp-content/uploads/2020/12/tucano-toco-1.jpg" alt="" id="imageItem">
+        </div>
+
+        <!-- BLOCOS DE COR -->
         <div class="colorContainer">
             <div class="blockContainer">
-                <h4>Color:</h4>
-                <div class="blocks"></div>
+                <h4 class="Poppins">Color:</h4>
+                <div class="blocksColor" id="blockColor">
+                    <input type="color" id="colorInput" class="inputColor">
+                </div>
             </div>
             <div class="blockContainer">
-                <h4>Color:</h4>
-                <div class="blocks"></div>
+                <h4 class="Poppins">Hexadecimal:</h4>
+                <div class="blocks">
+                    <img src="/src/assets/copy-icon.png" alt="copy icon" class="icon">
+                    <p class="Poppins">Hexadecimal</p>
+                </div>
             </div>
             <div class="blockContainer">
-                <h4>Color:</h4>
-                <div class="blocks"></div>
+                <h4 class="Poppins">RGB:</h4>
+                <div class="blocks">
+                    <img src="/src/assets/copy-icon.png" alt="copy icon" class="icon">
+                    <p class="Poppins">rgb</p>
+                </div>
             </div>
             <div class="blockContainer">
-                <h4>Color:</h4>
-                <div class="blocks"></div>
+                <h4 class="Poppins">HSL:</h4>
+                <div class="blocks">
+                    <img src="/src/assets/copy-icon.png" alt="copy icon" class="icon">
+                    <p class="Poppins">hsl</p>
+                </div>
             </div>
+
         </div>
     </main>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,8 @@
 html,
 body {
     height: 100%;
+    justify-content: center;
+    align-items: center;
     background-color: #F5F5F5;
     margin: 0;
 }
@@ -27,43 +29,10 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    width: 70%;
     /* Faz o contêiner ocupar a altura total da tela */
 }
 
-.imageContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: pink;
-    width: 400px;
-    height: 400px;
-    margin: 10px;
-}
-
-.colorContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 30%;
-    margin: 10px;
-}
-
-.blockContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 110px;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid black;
-}
-
-.blocks {
-    background-color: brown;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+.Poppins {
+    font-family: 'Poppins', sans-serif;
 }

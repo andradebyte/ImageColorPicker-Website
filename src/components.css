@@ -1,0 +1,150 @@
+.imageContainer {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    border-radius: 20px;
+    width: 700px;
+    height: 500px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.imageContainer:hover {
+    transform: scale(1.02);
+}
+
+.imageContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.colorContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+    margin: 10px;
+}
+
+.blockContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 220px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 8px;
+    padding: 5px;
+}
+
+.blocks {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.blocks:hover {
+    transform: scale(1.1);
+}
+
+.blocks p {
+    font-weight: bold;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.blocksColor {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    /* Adicionado para manter a posição relativa */
+}
+
+.blocksColor:hover {
+    transform: scale(1.1);
+}
+
+.inputColor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* Torna o input invisível, mas clicável */
+    cursor: pointer;
+    /* Mantém a aparência de botão */
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.navContainer li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.navClick {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.navClick:hover {
+    transform: scale(1.1);
+}
+
+.cameraClick {
+    background-color: black;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.cameraClickIcon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+}
+
+.cameraClickIcon:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
