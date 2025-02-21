@@ -28,7 +28,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 30%;
+    width: 20%;
     margin: 10px;
 }
 
@@ -98,50 +98,6 @@
     /* Torna o input invisível, mas clicável */
     cursor: pointer;
     /* Mantém a aparência de botão */
-}
-
-.navContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border-radius: 40px;
-    padding: 10px;
-}
-
-.navContainer li {
-    list-style-type: none;
-    margin: 10px;
-}
-
-.navClick {
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.navClick:hover {
-    transform: scale(1.1);
-}
-
-.cameraClick {
-    background-color: black;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    display: inline-block;
-}
-
-.cameraClickIcon {
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
-    transition: transform 0.3s;
-}
-
-.cameraClickIcon:hover {
-    transform: scale(1.1);
 }
 
 .icon {

@@ -7,29 +7,12 @@ body {
     margin: 0;
 }
 
-.headerContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.headerContainer h1 {
-    margin: 0;
-}
-
-.headerContainer p {
-    margin: 0;
-}
-
 .mainContainer {
     display: flex;
+    margin-top: 40px;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    width: 70%;
+    width: 100%;
     /* Faz o contêiner ocupar a altura total da tela */
 }
 

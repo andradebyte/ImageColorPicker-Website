@@ -1,0 +1,16 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.headerContainer h1 {
+    margin: 0;
+}
+
+.headerContainer p {
+    margin: 0;
+}
