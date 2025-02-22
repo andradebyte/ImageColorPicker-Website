@@ -19,9 +19,10 @@
     <link rel="stylesheet" href="components.css">
     <link rel="stylesheet" href="navContainer.css">
     <link rel="stylesheet" href="toast.css">
+    <link rel="stylesheet" href="styling.css">
 </head>
 
-<body>
+<body class="light dark">
     <header class="headerContainer">
         <h1 class="Poppins">Image Picker</h1>
         <p class="Poppins">find a color from an image!</p>
@@ -29,12 +30,12 @@
 
     <section class="navContainer">
         <!-- BOTAO LATERAL DE NAVEGACAO -->
-        <li class="navClick">
+        <li class="navClick" id="themeButton">
             <img src="/src/assets/dark-mode.png" alt="" style="width: 35px; height: 35px;">
         </li>
         <li class="navClick">
-            <a href="">
-                <img src="/src/assets/github.png" alt="" class="icon">
+            <a href="https://github.com/andradebyte/ImageColorPicker" target="_blank">
+                <img src="/src/assets/github.png" alt="github project link" class="icon">
             </a>
         </li>
     </section>
@@ -60,21 +61,21 @@
                 <h4 class="Poppins">Hexadecimal:</h4>
                 <div class="blocks">
                     <img src="/src/assets/copy-icon.png" alt="copy icon" class="icon">
-                    <p class="Poppins" id="hexadecimal">#000000</p>
+                    <p class="Poppins colorText" id="hexadecimal">#000000</p>
                 </div>
             </div>
             <div class="blockContainer" id="rgbContainer">
                 <h4 class="Poppins">RGB:</h4>
                 <div class="blocks">
                     <img src="/src/assets/copy-icon.png" alt="copy icon" class="icon">
-                    <p class="Poppins" id="rgb">rgb(0,0,0)</p>
+                    <p class="Poppins colorText" id="rgb">rgb(0,0,0)</p>
                 </div>
             </div>
             <div class="blockContainer" id="hslContainer">
                 <h4 class="Poppins">HSL:</h4>
                 <div class="blocks">
                     <img src="/src/assets/copy-icon.png" alt="copy icon" class="icon">
-                    <p class="Poppins" id="hsl">(0,0%,0%)</p>
+                    <p class="Poppins colorText" id="hsl">(0,0%,0%)</p>
                 </div>
             </div>
 
@@ -83,6 +84,7 @@
     </section>
 
     <script src="index.js"></script>
+    <script src="theme.js"></script>
 </body>
 
 </html>
