@@ -31,7 +31,7 @@
     <section class="navContainer">
         <!-- BOTAO LATERAL DE NAVEGACAO -->
         <li class="navClick" id="themeButton">
-            <img src="/src/assets/dark-mode.png" alt="" style="width: 35px; height: 35px;">
+            <img src="/src/assets/dark-mode.png" alt="dark mode" style="width: 35px; height: 35px;">
         </li>
         <li class="navClick">
             <a href="https://github.com/andradebyte/ImageColorPicker" target="_blank">
@@ -42,9 +42,16 @@
 
     <section class="mainContainer">
         <!-- IMAGEM -->
+        <div>
+            <div class="imageContainer">
+                <img src="https://www.adema.se.gov.br/wp-content/uploads/2020/12/tucano-toco-1.jpg" alt="Main Image"
+                    id="imageItem">
+            </div>
+            <div class="inputImageContainer">
+                <img src="./assets/image.png" alt="">
+                <input type="file" id="fileInput" accept="image/*" class="inputImageIcon">
+            </div>
 
-        <div class="imageContainer">
-            <img src="https://www.adema.se.gov.br/wp-content/uploads/2020/12/tucano-toco-1.jpg" alt="" id="imageItem">
         </div>
 
         <div style="margin-left: 30px; margin-right: 30px;"></div>
@@ -85,6 +92,7 @@
 
     <script src="index.js"></script>
     <script src="theme.js"></script>
+    <script src="loadImage.js"></script>
 </body>
 
 </html>
