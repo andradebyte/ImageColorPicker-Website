@@ -63,7 +63,7 @@ document.getElementById("colorInput").addEventListener("input", function () {
 const copyToClipBoard = (element) => {
     const value = element.innerHTML;
     navigator.clipboard.writeText(value);
-    alert("Copied to clipboard!");
+    showToast();
 };
 
 document.getElementById("hexadecimalContainer").addEventListener("click", function () {
@@ -77,3 +77,11 @@ document.getElementById("rgbContainer").addEventListener("click", function () {
 document.getElementById("hslContainer").addEventListener("click", function () {
     copyToClipBoard(document.getElementById("hsl"));
 });
+
+function showToast() {
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2000); // O toast desaparece após 2 segundos
+}
