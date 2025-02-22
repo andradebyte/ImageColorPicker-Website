@@ -1,3 +1,4 @@
+//Color Functionality
 
 document.getElementById("colorInput").addEventListener("input", function () {
 
@@ -54,4 +55,25 @@ document.getElementById("colorInput").addEventListener("input", function () {
     hexColor.innerHTML = inputColorValue;
     rgbColor.innerHTML = hexToRgb(inputColorValue);
     hslColor.innerHTML = rgbToHsl(hexToRgb(inputColorValue));
+});
+
+
+// COPY TO CLIPBOARD FUNCTIONALITY
+
+const copyToClipBoard = (element) => {
+    const value = element.innerHTML;
+    navigator.clipboard.writeText(value);
+    alert("Copied to clipboard!");
+};
+
+document.getElementById("hexadecimalContainer").addEventListener("click", function () {
+    copyToClipBoard(document.getElementById("hexadecimal"));
+});
+
+document.getElementById("rgbContainer").addEventListener("click", function () {
+    copyToClipBoard(document.getElementById("rgb"));
+});
+
+document.getElementById("hslContainer").addEventListener("click", function () {
+    copyToClipBoard(document.getElementById("hsl"));
 });
